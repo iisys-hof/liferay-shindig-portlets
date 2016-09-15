@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<!DOCTYPE display PUBLIC "-//Liferay//DTD Display 6.2.0//EN" "http://www.liferay.com/dtd/liferay-display_6_2_0.dtd">
+
+<display>
+	<category name="Apache Shindig">
+		<portlet id="shindig-activities" />
+		<portlet id="shindig-profile"></portlet>
+		<portlet id="shindig-user-directory"></portlet>
+		<portlet id="shindig-friends"></portlet>
+		<portlet id="shindig-suggestions"></portlet>
+		<portlet id="shortest-path"></portlet>
+	</category>
+</display>
