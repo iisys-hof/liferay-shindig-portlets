@@ -1,0 +1,210 @@
+<?xml version="1.0"?>
+
+<portlet-app xmlns="http://java.sun.com/xml/ns/portlet/portlet-app_2_0.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/portlet/portlet-app_2_0.xsd http://java.sun.com/xml/ns/portlet/portlet-app_2_0.xsd" version="2.0">
+	<portlet>
+		<portlet-name>shindig-activities</portlet-name>
+		<display-name>Shindig Activities</display-name>
+		<portlet-class>de.hofuniversity.iisys.liferay.portlet.activities.ActivitiesPortlet</portlet-class>
+		<init-param>
+			<name>view-template</name>
+			<value>/html/activities/view.jsp</value>
+		</init-param>
+		<expiration-cache>0</expiration-cache>
+		<supports>
+			<mime-type>text/html</mime-type>
+			<portlet-mode>view</portlet-mode>
+		</supports>
+		<resource-bundle>content.activities.Language</resource-bundle>
+		<portlet-info>
+			<title>Shindig Activities</title>
+			<short-title>Shindig Activities</short-title>
+			<keywords>Shindig, Activities</keywords>
+		</portlet-info>
+		<security-role-ref>
+			<role-name>administrator</role-name>
+		</security-role-ref>
+		<security-role-ref>
+			<role-name>guest</role-name>
+		</security-role-ref>
+		<security-role-ref>
+			<role-name>power-user</role-name>
+		</security-role-ref>
+		<security-role-ref>
+			<role-name>user</role-name>
+		</security-role-ref>
+	</portlet>
+	<portlet>
+		<portlet-name>shindig-profile</portlet-name>
+		<display-name>Shindig Profile</display-name>
+		<portlet-class>
+			de.hofuniversity.iisys.liferay.portlet.profile.ProfilePortlet
+		</portlet-class>
+		<init-param>
+			<name>view-template</name>
+			<value>/html/profile/view.jsp</value>
+		</init-param>
+		<expiration-cache>0</expiration-cache>
+		<supports>
+			<mime-type>text/html</mime-type>
+			<portlet-mode>view</portlet-mode>
+		</supports>
+		<resource-bundle>content.profile.Language</resource-bundle>
+		<portlet-info>
+			<title>Shindig Profile</title>
+			<short-title>Shindig Profile</short-title>
+			<keywords>Shindig, Profile</keywords>
+		</portlet-info>
+		<security-role-ref>
+			<role-name>administrator</role-name>
+		</security-role-ref>
+		<security-role-ref>
+			<role-name>guest</role-name>
+		</security-role-ref>
+		<security-role-ref>
+			<role-name>power-user</role-name>
+		</security-role-ref>
+		<security-role-ref>
+			<role-name>user</role-name>
+		</security-role-ref>
+	</portlet>
+	<portlet>
+		<portlet-name>shindig-user-directory</portlet-name>
+		<display-name>Shindig User Directory</display-name>
+		<portlet-class>
+			de.hofuniversity.iisys.liferay.portlet.userdirectory.UserDirectoryPortlet
+		</portlet-class>
+        <init-param>
+			<name>config-template</name>
+			<value>/html/userdirectory/configuration.jsp</value>
+		</init-param>
+		<init-param>
+			<name>view-template</name>
+			<value>/html/userdirectory/view.jsp</value>
+		</init-param>
+		<expiration-cache>0</expiration-cache>
+		<supports>
+			<mime-type>text/html</mime-type>
+			<portlet-mode>view</portlet-mode>
+		</supports>
+		<resource-bundle>content.userdirectory.Language</resource-bundle>
+		<portlet-info>
+			<title>Shindig User Directory</title>
+			<short-title>Shindig User Directory</short-title>
+			<keywords></keywords>
+		</portlet-info>
+		<security-role-ref>
+			<role-name>administrator</role-name>
+		</security-role-ref>
+		<security-role-ref>
+			<role-name>guest</role-name>
+		</security-role-ref>
+		<security-role-ref>
+			<role-name>power-user</role-name>
+		</security-role-ref>
+		<security-role-ref>
+			<role-name>user</role-name>
+		</security-role-ref>
+	</portlet>
+	<portlet>
+		<portlet-name>shindig-friends</portlet-name>
+		<display-name>Shindig Friends Portlet</display-name>
+		<portlet-class>
+			de.hofuniversity.iisys.liferay.portlet.friends.FriendsPortlet
+		</portlet-class>
+		<init-param>
+			<name>view-template</name>
+			<value>/html/friends/view.jsp</value>
+		</init-param>
+		<expiration-cache>0</expiration-cache>
+		<supports>
+			<mime-type>text/html</mime-type>
+			<portlet-mode>view</portlet-mode>
+		</supports>
+		<resource-bundle>content.friends.Language</resource-bundle>
+		<portlet-info>
+			<title>Shindig Friends Portlet</title>
+			<short-title>Shindig Friends</short-title>
+			<keywords></keywords>
+		</portlet-info>
+		<security-role-ref>
+			<role-name>administrator</role-name>
+		</security-role-ref>
+		<security-role-ref>
+			<role-name>guest</role-name>
+		</security-role-ref>
+		<security-role-ref>
+			<role-name>power-user</role-name>
+		</security-role-ref>
+		<security-role-ref>
+			<role-name>user</role-name>
+		</security-role-ref>
+	</portlet>
+	<portlet>
+		<portlet-name>shindig-suggestions</portlet-name>
+		<display-name>Shindig Suggestions Portlet</display-name>
+		<portlet-class>
+			de.hofuniversity.iisys.liferay.portlet.suggestions.SuggestionsPortlet
+		</portlet-class>
+		<init-param>
+			<name>view-template</name>
+			<value>/html/suggestions/view.jsp</value>
+		</init-param>
+		<expiration-cache>0</expiration-cache>
+		<supports>
+			<mime-type>text/html</mime-type>
+			<portlet-mode>view</portlet-mode>
+		</supports>
+		<resource-bundle>content.suggestions.Language</resource-bundle>
+		<portlet-info>
+			<title>Shindig Suggestions Portlet</title>
+			<short-title>Shindig Suggestions</short-title>
+			<keywords></keywords>
+		</portlet-info>
+		<security-role-ref>
+			<role-name>administrator</role-name>
+		</security-role-ref>
+		<security-role-ref>
+			<role-name>guest</role-name>
+		</security-role-ref>
+		<security-role-ref>
+			<role-name>power-user</role-name>
+		</security-role-ref>
+		<security-role-ref>
+			<role-name>user</role-name>
+		</security-role-ref>
+	</portlet>
+	<portlet>
+		<portlet-name>shortest-path</portlet-name>
+		<display-name>Shindig Shortest Path Portlet</display-name>
+		<portlet-class>
+			de.hofuniversity.iisys.liferay.portlet.shortestpath.ShortestPathPortlet
+		</portlet-class>
+		<init-param>
+			<name>view-template</name>
+			<value>/html/shortestpath/view.jsp</value>
+		</init-param>
+		<expiration-cache>0</expiration-cache>
+		<supports>
+			<mime-type>text/html</mime-type>
+			<portlet-mode>view</portlet-mode>
+		</supports>
+		<resource-bundle>content.shortestpath.Language</resource-bundle>
+		<portlet-info>
+			<title>Shindig Shortest Path Portlet</title>
+			<short-title>Shindig Shortest Path</short-title>
+			<keywords></keywords>
+		</portlet-info>
+		<security-role-ref>
+			<role-name>administrator</role-name>
+		</security-role-ref>
+		<security-role-ref>
+			<role-name>guest</role-name>
+		</security-role-ref>
+		<security-role-ref>
+			<role-name>power-user</role-name>
+		</security-role-ref>
+		<security-role-ref>
+			<role-name>user</role-name>
+		</security-role-ref>
+	</portlet>
+</portlet-app>
